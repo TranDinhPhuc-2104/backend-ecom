@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: projectJavaEE
+
+  datasource:
+    url: jdbc:mysql://192.168.147.129:3306/projectHK
+    username: sa
+    password: NewPassword
+
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+jwt:
+  signerKey: "a8574eeb8dbf9570ac559d9070808bc2126e47260f66a8a678b850d58c21e1b2"
