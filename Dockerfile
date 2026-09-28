@@ -9,4 +9,4 @@ WORKDIR /run
 COPY --from=build /app/target/*.jar app.jar
 RUN ls -la /run
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/run/projectJavaEE-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
